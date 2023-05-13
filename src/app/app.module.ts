@@ -12,7 +12,8 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule} from  '@angular/common/http'
+import { HttpClientModule} from  '@angular/common/http';
+import { ExperienceComponent } from './resume-components/experience/experience.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule} from  '@angular/common/http'
     AboutComponent,
     ResumeComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
