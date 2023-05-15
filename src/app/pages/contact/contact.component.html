@@ -16,26 +16,26 @@
                   <form id="contactForm"  (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                       <!-- Name input-->
                       <div class="form-floating mb-3">
-                          <input class="form-control" id="name"  [(ngModel)]="name" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                          <input class="form-control" required id="name" #name="ngModel" [ngClass]="{'is-invalid':!name.valid && name.touched}" ngModel name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                           <label for="name">Full name</label>
                           <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                       </div>
                       <!-- Email address input-->
                       <div class="form-floating mb-3">
-                          <input class="form-control" id="email" type="email"  [(ngModel)]="email" name="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                          <input class="form-control" required id="email" type="email"  #email="ngModel" [ngClass]="{'is-invalid': !email.valid && email.touched}" ngModel name="email" placeholder="name@example.com" data-sb-validations="required,email" />
                           <label for="email">Email address</label>
                           <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                           <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                       </div>
                       <!-- Company Name input-->
                       <div class="form-floating mb-3">
-                          <input class="form-control" id="company" type="text" [(ngModel)]="company" name="company" placeholder="Company Name" data-sb-validations="required" />
+                          <input class="form-control" required id="company" type="text" #company="ngModel" [ngClass]="{'is-invalid':!company.valid && company.touched }" ngModel  name="company" placeholder="Company Name" data-sb-validations="required" />
                           <label for="company">Company Name</label>
                           <div class="invalid-feedback" data-sb-feedback="company:required">A Comapny Name is required.</div>
                       </div>
                       <!-- Message input-->
                       <div class="form-floating mb-3">
-                          <textarea class="form-control" id="message" [(ngModel)]="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                          <textarea class="form-control" required id="message" #message="ngModel" [ngClass]="{'is-invalid': !message.valid && message.touched}" ngModel name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                           <label for="message">Message</label>
                           <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                       </div>
