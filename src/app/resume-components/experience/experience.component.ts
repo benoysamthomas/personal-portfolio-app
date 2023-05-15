@@ -7,15 +7,15 @@ import { ExperienceService } from 'src/app/service/experience.service';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent {
-  experiences!: [];
+  experience!: any[];
 
   constructor(private experienceService: ExperienceService) { }
 
   ngOnInit() {
-    this.experienceService.getExperience()
-      .subscribe(experiences => {
-        this.experiences = experiences;
-      });
+    this.experienceService.getExperience().subscribe(data => {
+      this.experience = data;
+      console.log(data);
+    });
   }
 
 }

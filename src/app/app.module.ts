@@ -13,7 +13,10 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule} from  '@angular/common/http';
-import { ExperienceComponent } from './resume-components/experience/experience.component'
+import { ExperienceComponent } from './resume-components/experience/experience.component';
+import { EducationComponent } from './resume-components/education/education.component';
+import { SkillsComponent } from './resume-components/skills/skills.component';
+import { LanguagesComponent } from './resume-components/languages/languages.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { ExperienceComponent } from './resume-components/experience/experience.c
     ResumeComponent,
     ProjectsComponent,
     ContactComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    EducationComponent,
+    SkillsComponent,
+    LanguagesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,18 +1,16 @@
+[
 {
-  "experienceList": [
-    {
-      "years":"2015 - 2017",
-      "role":"Software Engineer",
-      "company":"VBIS India",
-      "location":"Kerala, India",
-      "description":"Developed and Designed Responsive Web Applications and Websites using PHP, CodeIgniter Framework, JQuery, AJAX, JSON and Used MySQL for the development with 100% Client Satisfaction"
-   },
-   {
-    "years":"2013 - 2015",
-    "role":"Jr. Software Engineer",
-    "company":"Virtus India Pvt Ltd",
-    "location":"Kerala, India",
-    "description":"Developed various Webapplications using Core-PHP and JavaScript and debugged existing application. Documented the projects and monitored client issues."
- }
-  ]
-}
+"years":"2015 - 2017",
+"role":"Software Engineer",
+"company":"VBIS India",
+"location":"Kerala, India",
+"description":"Developed and Designed Responsive Web Applications and Websites using PHP, CodeIgniter Framework, JQuery, AJAX, JSON and Used MySQL for the development with 100% Client Satisfaction"
+},
+{
+"years":"2013 - 2015",
+"role":"Jr. Software Engineer",
+"company":"Virtus India Pvt Ltd",
+"location":"Kerala, India",
+"description":"Developed various Webapplications using Core-PHP and JavaScript and debugged existing application. Documented the projects and monitored client issues."
+}]
+
