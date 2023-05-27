@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -10,12 +10,8 @@ export class ExperienceService {
   experienceData !: any;
   constructor(private http: HttpClient) { }
 
-  getExperience(){
-     this.http.get(this.experienceUrl).subscribe(res => {
-     this.experienceData  = res;
-     //console.log(this.experienceData);
-      return this.experienceData;
-    });
+  getExperience(): Observable<any>{
+     return this.http.get<any>(this.experienceUrl)
 
   }
 }
