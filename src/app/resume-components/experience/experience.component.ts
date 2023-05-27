@@ -10,31 +10,16 @@ import { of } from 'rxjs';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
-  experience!: any;
+  experience!: any[];
 
  //  experienceUrl: string = '/src/apiservices/experience.json';
 constructor(private experienceService: ExperienceService) { }
  // constructor(private http: HttpClient) {}
   ngOnInit() {
-  this.experience= this.experienceService.getExperience().subscribe(data => {
-    const response=[];
-    for(let key in data){
-
-   // console.log(key);
-      const responseItem={
-        id:key,
-        ...data[key]
-      }
-
-      response.push(responseItem);
-    //  console.log(response);
-      this.experience=response;
-    console.log(this.experience);
-  }
-
-  });
-
-
+   this.experienceService.getExperience().subscribe(data => {
+   this.experience= data
+  // console.log(this.experience);
+  } );
   }
 
 }
